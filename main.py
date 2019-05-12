@@ -1,28 +1,25 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: iso-8859-15 -*-
-
-from _tkinter import *
-from Tkinter import *
+from tkinter import tix
+from tkinter import *
+from tkinter.constants import *
+from tkinter.filedialog import *
 import os
-
+from fenetre import *
 
 
 SCREEN_WIDTH=1920
 SCREEN_HEIGHT=1080
+#filename=askopenfilename()
+nbSymbPerCard=0
+#display window with:
+# list for number of symb per card
+# text for list and number of symbols required
+# choose file for names/images
+# checkboxes for images/text in card
+# destination folder
+# card disposition
+# card sizes ?
+# box bord arrondis
+test=Fenetre()
 
-fenetre=Tk()
-leftPanel=Frame(fenetre,width=758,height=500,borderwidth=1)
-
-leftPanel.pack(fill=BOTH)
-listeImgParCarte=Listbox(leftPanel)
-listeImgParCarte.insert(END,3)
-listeImgParCarte.insert(END,4)
-listeImgParCarte.insert(END,6)
-listeImgParCarte.insert(END,8)
-listeImgParCarte.insert(END,12)
-
-
-listeImgParCarte.pack(side="top",fill=X)
-
-
-fenetre.mainloop()
